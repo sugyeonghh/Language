@@ -14,7 +14,7 @@ int main(void){
     printf("도서 정보 입력 \n");
     for(int i=0; i<3; i++){
         printf("저자: "); scanf("%s",book[i].author); 
-        printf("제목: "); scanf("%s",book[i].title); 
+        printf("제목: "); scanf(" %[^\n]",book[i].title); 
         printf("페이지 수: "); scanf("%d",&book[i].page); 
         printf("\n");
     }
